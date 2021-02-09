@@ -1,20 +1,20 @@
-<script>
+<script lang="ts">
   import Button from "./Button.svelte";
   import Toggle from "./Toggle.svelte";
   import Menu from "./Menu.svelte";
-  export let name;
-  let dog;
+  export let name: string;
+  let dog: boolean;
 </script>
 
 <main>
-	<h1>moller design</h1>
-	soon™<br>
+  <h1>moller design</h1>
+  soon™<br />
   <Menu bind:on={dog}>hello, {name}!</Menu>
   Dog?
   <Toggle bind:on={dog} />
   <br />
   {#if dog}
-    <Button>dog</Button>
+    <div><Button>dog</Button></div>
   {/if}
 </main>
 
