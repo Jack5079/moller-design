@@ -1,5 +1,5 @@
-<script>
-  export let on = false;
+<script lang="ts">
+  export let on: boolean = false;
 </script>
 
 <button class:on on:click={() => (on = !on)}

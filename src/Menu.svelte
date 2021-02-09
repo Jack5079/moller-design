@@ -1,5 +1,5 @@
-<script>
-  export let on;
+<script lang="ts">
+  export let on: boolean;
   import Button from "./Button.svelte";
 </script>
 
@@ -14,7 +14,7 @@
 <style>
   nav {
     text-align: left;
-    
+
     width: 100vw;
     max-width: 200px;
     font-family: monospace;
