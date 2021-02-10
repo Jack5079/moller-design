@@ -2,7 +2,7 @@
   export let on: boolean = false;
 </script>
 
-<button class:on on:click={() => (on = !on)}
+<button class:on on:click={() => (on = !on)} aria-pressed={on}
   >{#if on}
     ✔
   {:else}
