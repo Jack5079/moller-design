@@ -1,8 +1,9 @@
 <script lang="ts">
   export let on: boolean = false;
+  export let id: string | undefined;
 </script>
 
-<button class:on on:click={() => (on = !on)} aria-pressed={on}
+<button {id} class:on on:click={() => (on = !on)} aria-pressed={on}
   >{#if on}
     ✔
   {:else}

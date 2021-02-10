@@ -10,8 +10,7 @@
   <h1>moller design</h1>
   soon™<br />
   <Menu bind:on={dog}>hello, {name}!</Menu>
-  Dog?
-  <Toggle bind:on={dog} />
+  <label for="menu">Moller? <Toggle id="menu" bind:on={dog} /></label>
   <br />
   {#if dog}
     <div><Button>dog</Button></div>
