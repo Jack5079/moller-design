@@ -4,14 +4,21 @@
 </script>
 
 <nav class:on>
-  <header>
+  <header class="clearfix">
     {document.title}
-    <Button on:click={() => (on = false)}>✖</Button>
+    <div class="right"><Button on:click={() => (on = false)}>✖</Button></div>
   </header>
   <slot />
 </nav>
 
 <style>
+  header div.right {
+    float: right;
+    padding-right: 1em;
+  }
+  .clearfix {
+    display: flow-root;
+  }
   nav {
     text-align: left;
 
