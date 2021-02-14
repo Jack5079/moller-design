@@ -1,5 +1,5 @@
-<script lang="ts">
-  export let on: boolean = false;
+<script>
+  export let on = false;
   import Button from "./Button.svelte";
 </script>
 

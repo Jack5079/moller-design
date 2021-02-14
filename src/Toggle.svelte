@@ -1,6 +1,6 @@
-<script lang="ts">
-  export let on: boolean = false;
-  export let id: string | undefined;
+<script>
+  export let on = false;
+  export let id;
 </script>
 
 <button {id} class:on on:click={() => (on = !on)} aria-pressed={on}
